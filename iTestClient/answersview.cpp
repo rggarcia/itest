@@ -35,7 +35,6 @@ QWidget(parent) {
     ans_text = new QTextBrowser(this);
     ans_text->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
     ans_text->setMaximumSize(16777215, 59);
-    ans_text->setFontPointSize(15);
     hlayout->addWidget(ans_radiobutton);
     hlayout->addWidget(ans_checkbox);
     hlayout->addWidget(ans_text);
