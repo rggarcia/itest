@@ -57,24 +57,13 @@ void QuestionWidget::init(QuestionItem *item, bool highlight_correct_answers)
                 QVBoxLayout *vlayout1 = new QVBoxLayout;
                 vlayout1->setContentsMargins(0, 0, 0, 0);
                 vlayout1->setSpacing(6);
-                QVBoxLayout *vlayout2 = new QVBoxLayout;
-                vlayout2->setContentsMargins(0, 0, 0, 0);
-                vlayout2->setSpacing(6);
                     for (int i = 0; i < item->numAnswers(); ++i) {
                         QLabel *lbl = new QLabel(this);
                         lbl->setWordWrap(true);
-                        if (item->numAnswers() % 2 == 0 ? i < item->numAnswers() / 2 : i <= item->numAnswers() / 2) {
-                            vlayout1->addWidget(lbl);
-                        } else {
-                            vlayout2->addWidget(lbl);
-                        }
+                        vlayout1->addWidget(lbl);
                         qw_lbl_answers << lbl;
                     }
-                    if (item->numAnswers() % 2 != 0) {
-                        vlayout2->addStretch();
-                    }
             hlayout->addLayout(vlayout1);
-            hlayout->addLayout(vlayout2);
         vlayout->addLayout(hlayout);
             qw_lbl_explanation = new QLabel(this);
             qw_lbl_explanation->setWordWrap(true);
