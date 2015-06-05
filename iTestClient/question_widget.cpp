@@ -48,6 +48,7 @@ void QuestionWidget::init(QuestionItem *item, bool highlight_correct_answers)
         vlayout->setContentsMargins(0, 0, 0, 0);
         vlayout->setSpacing(6);
             qw_lbl_question = new QLabel(this);
+            qw_lbl_question->setWordWrap(true);
         vlayout->addWidget(qw_lbl_question);
             qw_msw_svgs = new MTMultiSvgWidget(this);
         vlayout->addWidget(qw_msw_svgs);
