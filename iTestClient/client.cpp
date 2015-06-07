@@ -193,6 +193,8 @@ void MainWindow::readResults(QString input)
             item->setExplanation(in.readLine());
         }
     } while (!in.atEnd());
+    label_results_score->setVisible(!hideCorrectAnswersCheckBox->isChecked());
+    scoreLabel->setVisible(!hideCorrectAnswersCheckBox->isChecked());
     scoreLabel->setText(tr("%1 out of %2 (%3)").arg(current_test_score).arg(maxscore).arg(current_test_passmark.check(current_test_questions.values()) ? tr("PASSED") : tr("FAILED")));
     loadResults(resultsTableWidget);
 }
