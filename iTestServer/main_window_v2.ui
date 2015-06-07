@@ -1164,7 +1164,7 @@
               <string>Allow partially correct answers</string>
              </property>
              <property name="checked">
-              <bool>true</bool>
+              <bool>false</bool>
              </property>
             </widget>
            </item>
@@ -1227,6 +1227,9 @@
              </property>
              <property name="singleStep">
               <double>0.100000000000000</double>
+             </property>
+             <property name="value">
+              <double>-0.500000000000000</double>
              </property>
             </widget>
            </item>
@@ -1323,6 +1326,9 @@
              </property>
              <property name="singleStep">
               <double>0.100000000000000</double>
+             </property>
+             <property name="value">
+              <double>-0.500000000000000</double>
              </property>
             </widget>
            </item>
@@ -1425,6 +1431,9 @@
              </property>
              <property name="singleStep">
               <double>0.100000000000000</double>
+             </property>
+             <property name="value">
+              <double>-0.500000000000000</double>
              </property>
             </widget>
            </item>
@@ -1868,6 +1877,9 @@
              <property name="text">
               <string>Do not show correct answers at the end of the test</string>
              </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
             </widget>
            </item>
            <item row="0" column="4" colspan="3">
@@ -1877,6 +1889,9 @@
              </property>
              <property name="text">
               <string>Do not print test results</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -1906,6 +1921,9 @@
              </property>
              <property name="text">
               <string>Maximum</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -2035,6 +2053,9 @@
              <property name="maximum">
               <number>10</number>
              </property>
+             <property name="value">
+              <number>5</number>
+             </property>
             </widget>
            </item>
            <item row="3" column="3">
@@ -2072,7 +2093,7 @@
               <string>Shuffle questions</string>
              </property>
              <property name="checked">
-              <bool>true</bool>
+              <bool>false</bool>
              </property>
             </widget>
            </item>
@@ -3589,7 +3610,7 @@
      <x>0</x>
      <y>0</y>
      <width>860</width>
-     <height>22</height>
+     <height>23</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuHelp">
