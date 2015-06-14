@@ -563,6 +563,11 @@
              </item>
              <item>
               <widget class="QLabel" name="label_welcome">
+               <property name="font">
+                <font>
+                 <pointsize>20</pointsize>
+                </font>
+               </property>
                <property name="text">
                 <string>Welcome!</string>
                </property>
@@ -616,6 +621,11 @@
              </item>
              <item>
               <widget class="QLabel" name="label_your_name">
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
                <property name="text">
                 <string>Your name:</string>
                </property>
@@ -678,6 +688,11 @@
            </item>
            <item>
             <widget class="QLabel" name="label_ready_note">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
              <property name="text">
               <string>When you are ready to begin the examination, click the Start button below.</string>
              </property>
@@ -724,6 +739,11 @@
                  <width>100</width>
                  <height>0</height>
                 </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                </font>
                </property>
                <property name="text">
                 <string>Start</string>
@@ -947,8 +967,7 @@
               <property name="orientation">
                <enum>Qt::Vertical</enum>
               </property>
-              <widget class="QTextBrowser" name="questionTextBrowser">
-              </widget>
+              <widget class="QTextBrowser" name="questionTextBrowser"/>
               <widget class="MTMultiSvgWidget" name="svgDisplayWidget" native="true">
                <property name="minimumSize">
                 <size>
@@ -1124,8 +1143,7 @@
          </widget>
         </item>
         <item row="1" column="1">
-         <widget class="QLabel" name="scoreLabel">
-         </widget>
+         <widget class="QLabel" name="scoreLabel"/>
         </item>
         <item row="2" column="0" colspan="3">
          <widget class="QLabel" name="label_results">
